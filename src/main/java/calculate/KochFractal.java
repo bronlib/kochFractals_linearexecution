@@ -77,7 +77,6 @@ public class KochFractal {
         cancelled = false;
 
         drawKochEdge((1 + Math.sqrt(3.0) / 2.0) / 2, 0.75, 0.5, 0.0, level, edges);
-        Edge e = new Edge((1 + Math.sqrt(3.0) / 2.0) / 2, 0.75, 0.5, 0.0, Color.hsb(hue*360.0, 1.0, 1.0));
     }
     
     public void cancel() {
