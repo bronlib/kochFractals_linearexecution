@@ -15,7 +15,6 @@ public class RightEdge implements  Runnable {
     List<Edge> edges =  Collections.synchronizedList(new ArrayList());
     @Override
     public void run() {
-            int nr = koch.getNrOfEdges();
             koch.generateRightEdge(edges);
             notKoch.CountUp(1);
 

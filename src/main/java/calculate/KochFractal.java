@@ -36,8 +36,7 @@ public class KochFractal {
     }
 
 
-
-    private void drawKochEdge(double ax, double ay, double bx, double by, int n,  List<Edge> edges) {
+    public void drawKochEdge(double ax, double ay, double bx, double by, int n,  List<Edge> edges) {
         if (!cancelled) {
             if (n == 1) {
                 hue = hue + 1.0f / nrOfEdges;
@@ -83,16 +82,10 @@ public class KochFractal {
         cancelled = true;
     }
 
-    public void setLevel(int lvl) {
+    public int setLevel(int lvl) {
         level = lvl;
         nrOfEdges = (int) (3 * Math.pow(4, level - 1));
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
-    public int getNrOfEdges() {
         return nrOfEdges;
     }
+
 }
